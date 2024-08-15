@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline; /* Ya viene así por defecto */
+}
+
+
+/*Se aplicarán estos estilos a todos los before y after también*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /*Para versiones más antiguas*/
+    -moz-box-sizing: border-box; /*Para versiones más antiguas*/
+}
+
+
+body{
+    min-height: 100vh; /*Ocupa el 100% de la altura vertical que tiene el navegador/página.*/
+    scroll-behavior: smooth; /*si hay algún movimiento entre anclas el movimiento será suavizado*/
+    text-rendering: optimizeSpeed; /*Reenderizará las fuentes más rápidamente.*/
+    line-height: 1.5; /*Para dejarlo por defecto.*/
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+p a{
+    display: inline;
+    /*Si se tiene un párrafo con un enlace dentro se evita que exista un salto de línea
+    producido por un display-block */
+}
+
+img, video, iframe, picture, figure{
+    max-width: 100%;
+    display: block; /*Para que actúen como un bloque y así sean más fáciles de manipular.*/
+}
+
+
+/*Los formularios cambian los estilos por defecto, por ello se especifican estos detalles.*/
+form, input, select, textarea, button, label{
+    font-family: inherit; /*Hereda del padre con inherit.*/
+    font-size: inherit; 
+    color: inherit;
+}
