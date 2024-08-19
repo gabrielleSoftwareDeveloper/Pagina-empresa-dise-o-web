@@ -20,7 +20,7 @@
 
 /*==========Estilos generales=============*/
 html{
-    font-size: 10px; /*Base para los rem*/
+    font-size: 62.5%; /*10px de base para los rem, es preferible utilizar el % equivalente a 10px pues da mayor concordancia cuando el usuario decide cambiar el tamaño de la fuente (accesibilidad).*/
     overflow-x:hidden; /*Todo lo que sobresalga en el eje x se ocultará.*/
 }
 
@@ -644,6 +644,10 @@ body{
     flex-wrap: wrap; /*Para que use saltos de línea.*/
     gap: 4rem 5rem; /*La columna central será de 7/5rem.*/
 }
+
+.projects__project{
+    width: calc(50% - 3.5rem); /*Evita que las tarjetas salten, en 1508px, hacia abajo.*/
+} /*Las imágenes se mantienen en pares.*/
 
 .project__container-img{
     width: 100%;

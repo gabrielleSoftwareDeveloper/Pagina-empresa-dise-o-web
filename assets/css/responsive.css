@@ -1,0 +1,356 @@
+
+/*A partir de 1600 - aplicación de estilos. >1600px*/
+@media (min-width: 1600px){
+    .layout{
+        min-width: 1600px;
+    }
+
+    .layout__menu{
+        padding: 3.5rem 9.5rem;
+    }
+
+    .layout__banner{ /*Banner azul*/
+        min-height: 85rem;
+        margin: 0 9.5rem;
+        /* Equivalente al margin aplicado -> width: calc(100% -6rem);
+        margin: 0 auto;*/
+        padding-right: 0;
+        padding-left: 20rem;
+        padding-top: 25rem;
+        padding-bottom: 30rem;
+    }
+
+    .services__service{ /*Tarjetas*/
+        padding: 7rem 5rem; 
+    }
+
+}
+
+/*En 1508px se nmodificó styles.css - projects__project*/
+
+@media (min-width: 1199px) and (max-width:1400px){
+    /* Reducción general de espacios.
+    .services__grid,
+    .projects__grid,
+    .stats__container,
+    .contact__container,*/
+    .reviews__grid,
+    .clients__container,
+    .news__container,
+    .footer__container{
+        max-width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .projects__all{
+        gap: 3rem;
+    }
+
+}
+
+@media(max-width: 1200px){
+    .layout{ /*Ancho de la imagen ppal.*/
+        min-width: 992px;
+    }
+
+    .nav__item{
+        margin: 0 2rem; /*Reducción a 2rem.*/
+    }
+
+    .banner__title{
+        font-size: 6rem;
+    }
+
+    .layout__services{
+        margin: 10rem 7rem;
+        margin-bottom: 0;
+    }
+
+        /* Reducción general de espacios.
+    .services__grid,
+    .projects__grid,
+    .stats__container,
+    .contact__container,*/
+    .reviews__grid,
+    .clients__container,
+    .news__container,
+    .footer__container{
+        max-width: 96rem; /*Se comprime significativamente.*/
+    }
+
+    .services__service{
+        padding: 4rem 1.5rem;
+    }
+
+    .service__container-img{ /*Reducción del tamaño de la imagen de las tarjetas de servicios.*/
+        max-width: 6rem;
+    }
+
+    .projects_all{
+        gap: 3rem;
+    }
+
+    .layout__stats,
+    .layout__clients{
+        padding: 10rem 7rem; /*Se expandirán más la letra.*/
+    }
+
+    .clients__title{
+        width: 70%;
+    }
+
+    .clients__description{
+        width: 60%;
+    }
+
+    .layout__news{
+        padding: 10rem 0; /*Se reduce el aire arriba y abajo.*/
+    }
+
+    .news__list{
+        flex-direction: column;
+    }
+
+    .news__new:last-child{
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .layout__contact{
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+    }
+
+    .fleft__container{
+        padding-right: 7rem;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .layout{
+        min-width: auto;
+    }
+
+    .navbar__nav{
+        display: none;
+    }
+
+    .layout__banner{
+        min-height: 100%;
+        margin:0 3rem;
+    }
+
+    .banner__content{
+        width: 65%;
+    }
+
+    .banner__title{
+        font-size: 5rem;
+    }
+
+    .banner__btn{ /*Reducción del botón.*/
+        padding: 2rem 3.5rem;
+    }
+
+    .shapes__item{ /*Reducción del tamaño de las formas.*/
+        width: 50%;
+    }
+
+
+    /* Reducción general de espacios.
+    .services__grid,
+    .projects__grid,
+    .stats__container,
+    .contact__container,*/
+    .reviews__grid,
+    .clients__container,
+    .news__container,
+    .footer__container{
+        max-width: 72rem; /*Se comprime significativamente.*/
+    }
+
+    .services__subtitle,
+    .projects__subtitle,
+    .stats__subtitle,
+    .reviews__subtitle,
+    .clients__subtitle,
+    .news__subtitle,
+    .contact__subtitle{
+        font-size: 1.8remrem;
+    }
+
+    .services__title,
+    .projects__title,
+    .stats__title,
+    .reviews__title,
+    .clients__title,
+    .news__title,
+    .contact__title{
+        font-size: 5rem;
+    }
+
+    .services__list{
+        flex-direction: column;
+    }
+
+    .services__service{
+        width: 95%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 4rem 2.5rem;
+    }
+
+    .service-shapes--shape2{
+        display: none;
+    }
+    .layout__services{
+        padding-bottom: 4rem;
+    }
+
+
+    /*Proyectos*/
+    .layout__projects{
+        padding: 8rem 4rem;
+    }
+
+    .project-shapes--shape2{
+        display: none;
+    }
+
+    /*Estadísticas y clientes.*/
+    .layout__stats,
+    .layout__clients{
+        padding: 8rem 5rem;
+
+    }
+
+    .stats__description,
+    .clients__description{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+
+    .stats__progress{
+        flex-wrap: wrap; /*Se colocarán uno debajo del otro cuando sea necesario.*/
+    }
+
+    .stats__stat{
+        width: calc(50% - 1.5rem);
+    }
+
+    .layout__reviews{
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+    }
+
+    .reviews__description,
+    .news__description{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+
+    .reviews__container{ /*Reseñas en columna.*/
+        flex-direction: column;
+    }
+
+    /*Clientes*/
+    .clients__title{
+        font-size: 5rem;
+        width: 100%;
+    }
+
+    .clients__logos{
+        flex-wrap: wrap; /*Se colocarán uno debajo del otro cuando sea necesario.*/
+    }
+
+    .clients__item{
+        width: calc(50% - 3rem);
+    }
+
+    .layout__news{
+        padding: 8rem 0;
+    }
+
+    /*Contacto*/
+    .layout__contact{
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .layout__contact::before{
+        height: 60rem; /*Fondo azul menor.*/
+    }
+
+    .contact__title{
+        width: 100%;
+    }
+
+    .contact__btn{
+        padding: 1.8rem 3.5rem;
+    }
+
+    .contact__thumb--chat{
+        margin-right: -13rem;
+        margin-bottom: -0.8rem;
+        width: 70%;
+    }
+
+    .contact__img{
+        width: 70%;
+    }
+
+    .contact__thumb--laptop{
+        bottom: 0;
+        left: 0;
+    }
+
+    .contact__thumb--mobile{
+        bottom: 0;
+        right: -8rem;
+    }
+
+    /*Footer*/
+    .social__img{
+        font-size: 2rem;
+    }
+
+    .footer__main{
+      flex-direction: column;  
+    }
+
+    .footer__fleft{
+        width: 100%;
+    }
+
+    .fleft__container{
+        border: none;
+    }
+
+    .footer__fright{
+        width: 100%;
+    }
+
+    .footer__bottom{
+        flex-direction: column;
+    }
+
+
+    .footer__copyright{
+        flex-basis: auto;
+        text-align: center;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .footer__links{
+        flex-basis: auto;
+        text-align: center;
+    }
+
+    .footer__flinks{
+        justify-content: center;
+    }
+
+}
