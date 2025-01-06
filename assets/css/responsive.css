@@ -1,4 +1,3 @@
-
 /*A partir de 1600 - aplicación de estilos. >1600px*/
 @media (min-width: 1600px){
     .layout{
@@ -126,6 +125,7 @@
         padding-right: 7rem;
     }
 
+
 }
 
 @media (max-width: 1000px){
@@ -135,6 +135,10 @@
 
     .navbar__nav{
         display: none;
+    }
+
+    .navbar__mobile-btn{
+        display: block;
     }
 
     .layout__banner{

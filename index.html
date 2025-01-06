@@ -1,38 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/font/dmsans/dmsans.css"/>
-    
+    <link rel="stylesheet" href="assets/font/dmsans/dmsans.css" />
+
     <!-- Carga fuentes -->
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
-    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css"/>
-    
-    <!-- Carga estilos -->   
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="./assets/css/styles.css"/>
-    <link rel="stylesheet" href="./assets/css/responsive.css"/>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+
+    <!-- Carga estilos -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Carga JS -->
+    <script src="assets/js/menu-mobile.js"></script>
+    <script src="assets/js/navbar-fixed.js"></script>
+    <script src="assets/js/dark.js"></script>
 
     <title>Agencia Desarrollo Web</title>
 </head>
+
 <body>
-    
+    <!-- Botón modo oscuro -->
+     <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__btn-icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+
+            <span class="switcher__btn-icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+        </button>
+     </div>
+
+    <!-- Menú navegación responsive -->
+    <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a class="menu-mobile__link-logo" href="#">
+                    <img class="menu-mobile__logo" src="assets/img/logo1.png" alt="Logo del sitio web">
+                </a>
+            </div>
+
+            <button class="menu-mobile__btn-close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+            </button>
+        </header>
+
+        <div class="menu-mobile__body">
+            <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Inicio</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+                        <ul class="menu-mobile__submenu-mobile">
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Diseño Web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo Web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Consultoría</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Portafolio
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+                        <ul class="menu-mobile__submenu-mobile"">
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Diseño Web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo Web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Consultoría</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Blog
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+                        <ul class="menu-mobile__submenu-mobile"">
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Diseño Web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo Web</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                            </li>
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Consultoría</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Equipo</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- Layout principal -->
     <div class="layout">
         <!-- Menú-->
         <section class="layout__menu">
-           <header class="menu__navbar">
+            <header class="menu__navbar">
                 <!-- Logo -->
                 <div class="navbar__logo">
                     <a href="#" class="navbar__link-logo">
-                        <img src="./assets/img/logo1.png" class="navbar__logo-light"/>
+                        <img src="./assets/img/logo1.png" class="navbar__logo-light" />
                     </a>
                 </div>
 
+                <!-- Botón del menú responsive -->
+                <div class="navbar__mobile-btn">
+                    <button class="mobile-btn__wrap">
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                    </button>
+                </div>
+
                 <!-- Navegación -->
-                 <nav class="navbar__nav">
+                <nav class="navbar__nav">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#" class="nav__title">Inicio</a>
@@ -101,8 +217,8 @@
                             <a href="#" class="nav__title">Contacto</a>
                         </li>
                     </ul>
-                 </nav>
-           </header> 
+                </nav>
+            </header>
         </section>
 
         <!-- Banner-->
@@ -161,7 +277,7 @@
 
                 <header class="services__header">
                     <p class="services__subtitle">¿Qué podemos hacer por ti</p>
-                    <h2 class="services__title">Servicios que te <br/> pueden ayudar</h2>
+                    <h2 class="services__title">Servicios que te <br /> pueden ayudar</h2>
                 </header>
 
                 <div class="services__list">
@@ -226,17 +342,17 @@
             <ul class="services__service-shapes">
                 <li class="service-shapes__item service-shapes--shape1">
                     <div class="service-shapes__container">
-                        <img class="service-shapes__img" src="./assets/img/circle-2.png"/>
+                        <img class="service-shapes__img" src="./assets/img/circle-2.png" />
                     </div>
                 </li>
                 <li class="service-shapes__item service-shapes--shape2">
                     <div class="service-shapes__container">
-                        <img class="service-shapes__img" src="./assets/img/bubble-2.png"/>
+                        <img class="service-shapes__img" src="./assets/img/bubble-2.png" />
                     </div>
                 </li>
                 <li class="service-shapes__item service-shapes--shape3">
                     <div class="service-shapes__container">
-                        <img class="service-shapes__img" src="./assets/img/bubble-1.png"/>
+                        <img class="service-shapes__img" src="./assets/img/bubble-1.png" />
                     </div>
                 </li>
 
@@ -249,7 +365,7 @@
             <div class="projects__grid">
                 <header class="projects__header">
                     <p class="projects__subtitle">Nuestros proyectos</p>
-                    <h2 class="projects__title">Algunos de nuestros <br/> mejores trabajos</h2>
+                    <h2 class="projects__title">Algunos de nuestros <br /> mejores trabajos</h2>
                 </header>
 
                 <ul class="projects__categories">
@@ -271,7 +387,7 @@
                     <article class="projects__project">
                         <div class="project__container-img">
                             <a href="#" class="project__link-img">
-                                <img src="./assets/img/project-1.jpg" class="project__img" alt="Proyecto"/>
+                                <img src="./assets/img/project-1.jpg" class="project__img" alt="Proyecto" />
                             </a>
                         </div>
 
@@ -293,7 +409,7 @@
                     <article class="projects__project">
                         <div class="project__container-img">
                             <a href="#" class="project__link-img">
-                                <img src="./assets/img/project-2.jpg" class="project__img" alt="Proyecto"/>
+                                <img src="./assets/img/project-2.jpg" class="project__img" alt="Proyecto" />
                             </a>
                         </div>
 
@@ -303,7 +419,7 @@
                                     Gestión de tareas
                                 </a>
                             </h3>
-                            
+
                             <div class="project__tags">
                                 <span class="project__tag">Marca,</span>
                                 <span class="project__tag">Web,</span>
@@ -315,7 +431,7 @@
                     <article class="projects__project">
                         <div class="project__container-img">
                             <a href="#" class="project__link-img">
-                                <img src="./assets/img/project-3.jpg" class="project__img" alt="Proyecto"/>
+                                <img src="./assets/img/project-3.jpg" class="project__img" alt="Proyecto" />
                             </a>
                         </div>
 
@@ -325,7 +441,7 @@
                                     Red social
                                 </a>
                             </h3>
-                            
+
                             <div class="project__tags">
                                 <span class="project__tag">Diseño,</span>
                                 <span class="project__tag">Desarrollo</span>
@@ -336,7 +452,7 @@
                     <article class="projects__project">
                         <div class="project__container-img">
                             <a href="#" class="project__link-img">
-                                <img src="./assets/img/project-4.jpg" class="project__img" alt="Proyecto"/>
+                                <img src="./assets/img/project-4.jpg" class="project__img" alt="Proyecto" />
                             </a>
                         </div>
 
@@ -346,7 +462,7 @@
                                     Agencia Digital
                                 </a>
                             </h3>
-                            
+
                             <div class="project__tags">
                                 <span class="project__tag">Web,</span>
                                 <span class="project__tag">UI/UX</span>
@@ -357,7 +473,7 @@
                     <article class="projects__project">
                         <div class="project__container-img">
                             <a href="#" class="project__link-img">
-                                <img src="./assets/img/project-5.jpg" class="project__img" alt="Proyecto"/>
+                                <img src="./assets/img/project-5.jpg" class="project__img" alt="Proyecto" />
                             </a>
                         </div>
 
@@ -367,7 +483,7 @@
                                     Portafolio personal
                                 </a>
                             </h3>
-                            
+
                             <div class="project__tags">
                                 <span class="project__tag">Logo,</span>
                                 <span class="project__tag">Web,</span>
@@ -379,7 +495,7 @@
                     <article class="projects__project">
                         <div class="project__container-img">
                             <a href="#" class="project__link-img">
-                                <img src="./assets/img/project-6.jpg" class="project__img" alt="Proyecto"/>
+                                <img src="./assets/img/project-6.jpg" class="project__img" alt="Proyecto" />
                             </a>
                         </div>
 
@@ -389,7 +505,7 @@
                                     Aplicación Web
                                 </a>
                             </h3>
-                            
+
                             <div class="project__tags">
                                 <span class="project__tag">Logo,</span>
                                 <span class="project__tag">Web,</span>
@@ -403,18 +519,18 @@
             <ul class="projects__project-shapes">
                 <li class="project-shapes__item project-shapes--shape1">
                     <div class="project-shapes__container">
-                        <img class="project-shapes__img" src="./assets/img/circle-2.png"/>
+                        <img class="project-shapes__img" src="./assets/img/circle-2.png" />
                     </div>
                 </li>
 
                 <li class="project-shapes__item project-shapes--shape2">
                     <div class="project-shapes__container">
-                        <img class="project-shapes__img" src="./assets/img/bubble-2.png"/>
+                        <img class="project-shapes__img" src="./assets/img/bubble-2.png" />
                     </div>
                 </li>
                 <li class="project-shapes__item project-shapes--shape3">
                     <div class="project-shapes__container">
-                        <img class="project-shapes__img" src="./assets/img/bubble-1.png"/>
+                        <img class="project-shapes__img" src="./assets/img/bubble-1.png" />
                     </div>
                 </li>
 
@@ -437,7 +553,7 @@
                 <div class="stats__progress">
                     <article class="stats__stat">
                         <div class="stat__icon">
-                            <img src="./assets/img/icon-7.png"/>
+                            <img src="./assets/img/icon-7.png" />
                         </div>
 
                         <span class="stat__count">+15</span>
@@ -448,7 +564,7 @@
 
                     <article class="stats__stat">
                         <div class="stat__icon">
-                            <img src="./assets/img/icon-8.png"/>
+                            <img src="./assets/img/icon-8.png" />
                         </div>
 
                         <span class="stat__count">+15</span>
@@ -459,7 +575,7 @@
 
                     <article class="stats__stat">
                         <div class="stat__icon">
-                            <img src="./assets/img/icon-9.png"/>
+                            <img src="./assets/img/icon-9.png" />
                         </div>
 
                         <span class="stat__count">+20</span>
@@ -470,7 +586,7 @@
 
                     <article class="stats__stat">
                         <div class="stat__icon">
-                            <img src="./assets/img/apple.png"/>
+                            <img src="./assets/img/apple.png" />
                         </div>
 
                         <span class="stat__count">+500</span>
@@ -498,64 +614,70 @@
                         <span class="review__company">
                             <img class="review__img" src="./assets/img/google-2.png" />
                         </span>
-                            <p class="review__description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos similique veritatis itaque earum assumenda modi. Inventore blanditiis sequi voluptas delectus magni mollitia architecto possimus fugit laborum accusantium! Ratione, recusandae error.
-                            </p>
-                        
-                            <div class="review__author">
-                                <div class="author__container-img">
-                                    <img class="author__img" src="./assets/img/testimonial-2.png"/>
-                                </div>
-                                <div class="author__content">
-                                    <span class="author__name">Víctor Robles</span>
-                                    <span class="author__description">Desarrollador Web</span>
-                                </div>
+                        <p class="review__description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos similique veritatis itaque
+                            earum assumenda modi. Inventore blanditiis sequi voluptas delectus magni mollitia architecto
+                            possimus fugit laborum accusantium! Ratione, recusandae error.
+                        </p>
+
+                        <div class="review__author">
+                            <div class="author__container-img">
+                                <img class="author__img" src="./assets/img/testimonial-2.png" />
                             </div>
+                            <div class="author__content">
+                                <span class="author__name">Víctor Robles</span>
+                                <span class="author__description">Desarrollador Web</span>
+                            </div>
+                        </div>
                     </article>
 
                     <article class="reviews__review">
                         <span class="review__company">
                             <img class="review__img" src="./assets/img/udemy.png" />
                         </span>
-                            <p class="review__description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos similique veritatis itaque earum assumenda modi. Inventore blanditiis sequi voluptas delectus magni mollitia architecto possimus fugit laborum accusantium! Ratione, recusandae error.
-                            </p>
-                        
-                            <div class="review__author">
-                                <div class="author__container-img">
-                                    <img class="author__img" src="./assets/img/testimonial-2.png"/>
-                                </div>
-                                <div class="author__content">
-                                    <span class="author__name">Víctor Robles</span>
-                                    <span class="author__description">Desarrollador Web</span>
-                                </div>
+                        <p class="review__description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos similique veritatis itaque
+                            earum assumenda modi. Inventore blanditiis sequi voluptas delectus magni mollitia architecto
+                            possimus fugit laborum accusantium! Ratione, recusandae error.
+                        </p>
+
+                        <div class="review__author">
+                            <div class="author__container-img">
+                                <img class="author__img" src="./assets/img/testimonial-2.png" />
                             </div>
+                            <div class="author__content">
+                                <span class="author__name">Víctor Robles</span>
+                                <span class="author__description">Desarrollador Web</span>
+                            </div>
+                        </div>
                     </article>
 
                     <article class="reviews__review">
                         <span class="review__company">
                             <img class="review__img" src="./assets/img/youtube.png" />
                         </span>
-                            <p class="review__description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti rem labore modi rerum explicabo voluptatibus voluptatum velit iusto eum minus deserunt recusandae nisi neque esse, asperiores numquam corporis perferendis laudantium.
-                            </p>
-                        
-                            <div class="review__author">
-                                <div class="author__container-img">
-                                    <img class="author__img" src="./assets/img/testimonial-2.png"/>
-                                </div>
-                                <div class="author__content">
-                                    <span class="author__name">Víctor Robles</span>
-                                    <span class="author__description">Desarrollador Web</span>
-                                </div>
+                        <p class="review__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti rem labore modi rerum
+                            explicabo voluptatibus voluptatum velit iusto eum minus deserunt recusandae nisi neque esse,
+                            asperiores numquam corporis perferendis laudantium.
+                        </p>
+
+                        <div class="review__author">
+                            <div class="author__container-img">
+                                <img class="author__img" src="./assets/img/testimonial-2.png" />
                             </div>
+                            <div class="author__content">
+                                <span class="author__name">Víctor Robles</span>
+                                <span class="author__description">Desarrollador Web</span>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
             <ul class="reviews__review-shapes">
                 <li class="review-shapes__item review-shapes--shape3">
                     <div class="review-shapes__container">
-                        <img class="review-shapes__img" src="./assets/img/bubble-1.png"/>
+                        <img class="review-shapes__img" src="./assets/img/bubble-1.png" />
                     </div>
                 </li>
             </ul>
@@ -574,19 +696,19 @@
 
                 <div class="clients__logos">
                     <article class="clients__item">
-                        <img class="clients__img" src="./assets/img/brand-1.png"/>
+                        <img class="clients__img" src="./assets/img/brand-1.png" />
                     </article>
 
                     <article class="clients__item">
-                        <img class="clients__img" src="./assets/img/brand-1.png"/>
+                        <img class="clients__img" src="./assets/img/brand-1.png" />
                     </article>
 
                     <article class="clients__item">
-                        <img class="clients__img" src="./assets/img/brand-1.png"/>
+                        <img class="clients__img" src="./assets/img/brand-1.png" />
                     </article>
 
                     <article class="clients__item">
-                        <img class="clients__img" src="./assets/img/brand-1.png"/>
+                        <img class="clients__img" src="./assets/img/brand-1.png" />
                     </article>
                 </div>
             </div>
@@ -594,7 +716,7 @@
             <ul class="clients__client-shapes">
                 <li class="client-shapes__item client-shapes--shape3">
                     <div class="client-shapes__container">
-                        <img class="client-shapes__img" src="./assets/img/line-9.png"/>
+                        <img class="client-shapes__img" src="./assets/img/line-9.png" />
                     </div>
                 </li>
             </ul>
@@ -617,7 +739,7 @@
 
                     <article class="news__new">
                         <div class="new__container-img">
-                            <img class="new__img" src="./assets/img/story-1.jpg" alt="Primera noticia"/>
+                            <img class="new__img" src="./assets/img/story-1.jpg" alt="Primera noticia" />
                         </div>
                         <div class="new__content">
                             <h3 class="new__title">
@@ -627,7 +749,8 @@
                             </h3>
 
                             <p class="new__description">
-                               ¿Quieres dar tus primeros pasos en el desarrollo web y aprender a crear webs espectaculares? 
+                                ¿Quieres dar tus primeros pasos en el desarrollo web y aprender a crear webs
+                                espectaculares?
                             </p>
 
                             <a href="#" class="new__more">
@@ -649,7 +772,8 @@
                             </h3>
 
                             <p class="new__description">
-                               ¿Quieres dar tus primeros pasos en el desarrollo web y aprender a crear webs espectaculares? 
+                                ¿Quieres dar tus primeros pasos en el desarrollo web y aprender a crear webs
+                                espectaculares?
                             </p>
 
                             <a href="#" class="new__more">
@@ -664,23 +788,23 @@
             <ul class="news__new-shapes">
                 <li class="new-shapes__item new-shapes--shape1">
                     <div class="new-shapes__container">
-                        <img class="new-shapes__img" src="./assets/img/bubble-1.png"/>
+                        <img class="new-shapes__img" src="./assets/img/bubble-1.png" />
                     </div>
                 </li>
 
                 <li class="new-shapes__item new-shapes--shape2">
                     <div class="new-shapes__container">
-                        <img class="new-shapes__img" src="./assets/img/line-1.png"/>
+                        <img class="new-shapes__img" src="./assets/img/line-1.png" />
                     </div>
                 </li>
                 <li class="new-shapes__item new-shapes--shape3">
                     <div class="new-shapes__container">
-                        <img class="new-shapes__img" src="./assets/img/line-2.png"/>
+                        <img class="new-shapes__img" src="./assets/img/line-2.png" />
                     </div>
                 </li>
                 <li class="new-shapes__item new-shapes--shape4">
                     <div class="new-shapes__container">
-                        <img class="new-shapes__img" src="./assets/img/bubble-2.png"/>
+                        <img class="new-shapes__img" src="./assets/img/bubble-2.png" />
                     </div>
                 </li>
             </ul>
@@ -699,15 +823,15 @@
 
                 <div class="contact__images">
                     <div class="contact__thumb contact__thumb--chat">
-                        <img class="contact__img" src="./assets/img/chat-group.png"/>
+                        <img class="contact__img" src="./assets/img/chat-group.png" />
                     </div>
 
                     <div class="contact__thumb contact__thumb--laptop">
-                        <img class="contact__img" src="./assets/img/laptop-poses.png"/>
+                        <img class="contact__img" src="./assets/img/laptop-poses.png" />
                     </div>
 
                     <div class="contact__thumb contact__thumb--mobile">
-                        <img class="contact__img" src="./assets/img/men-mobile.png"/>
+                        <img class="contact__img" src="./assets/img/men-mobile.png" />
                     </div>
                 </div>
             </div>
@@ -716,40 +840,40 @@
 
                 <li class="backshapes__item backshapes--shape1">
                     <div class="backshapes__container">
-                        <img class="backshapes__img" src="./assets/img/bubble-12.png"/>
+                        <img class="backshapes__img" src="./assets/img/bubble-12.png" />
                     </div>
                 </li>
                 <li class="backshapes__item backshapes--shape2">
                     <div class="backshapes__container">
-                        <img class="backshapes__img" src="./assets/img/bubble-16.png"/>
+                        <img class="backshapes__img" src="./assets/img/bubble-16.png" />
                     </div>
                 </li>
                 <li class="backshapes__item backshapes--shape3">
                     <div class="backshapes__container">
-                        <img class="backshapes__img" src="./assets/img/bubble-13.png"/>
+                        <img class="backshapes__img" src="./assets/img/bubble-13.png" />
                     </div>
                 </li>
                 <li class="backshapes__item backshapes--shape4">
                     <div class="backshapes__container">
-                        <img class="backshapes__img" src="./assets/img/bubble-14.png"/>
+                        <img class="backshapes__img" src="./assets/img/bubble-14.png" />
                     </div>
                 </li>
                 <li class="backshapes__item backshapes--shape5">
                     <div class="backshapes__container">
-                        <img class="backshapes__img" src="./assets/img/bubble-16.png"/>
+                        <img class="backshapes__img" src="./assets/img/bubble-16.png" />
                     </div>
                 </li>
                 <li class="backshapes__item backshapes--shape6">
                     <div class="backshapes__container">
-                        <img class="backshapes__img" src="./assets/img/bubble-15.png"/>
+                        <img class="backshapes__img" src="./assets/img/bubble-15.png" />
                     </div>
                 </li>
                 <li class="backshapes__item backshapes--shape7">
                     <div class="backshapes__container">
-                        <img class="backshapes__img" src="./assets/img/bubble-16.png"/>
+                        <img class="backshapes__img" src="./assets/img/bubble-16.png" />
                     </div>
                 </li>
-                
+
             </ul>
         </section>
 
@@ -765,7 +889,7 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="#" class="social__link">        
+                            <a href="#" class="social__link">
                                 <i class="fa-brands fa-twitter social__img"></i>
                             </a>
                         </li>
@@ -812,7 +936,9 @@
                         <div class="fleft__container">
                             <h2 class="fleft__title">Contáctanos</h2>
                             <p class="fleft__subtitle">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at voluptatibus facere tenetur voluptatem, eveniet excepturi velit, iusto repellat quidem quis necessitatibus cumque in est aliquam quia dolore, veniam iste!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at voluptatibus facere
+                                tenetur voluptatem, eveniet excepturi velit, iusto repellat quidem quis necessitatibus
+                                cumque in est aliquam quia dolore, veniam iste!
                             </p>
 
                             <form class="fleft__form">
@@ -820,7 +946,7 @@
                                     <span class="fleft__mail-icon">
                                         <i class="fa-solid fa-envelope-open-text fleft__img"></i>
                                     </span>
-                                    <input type="text" class="fleft__form-control" placeholder="Correo Electrónico"/>
+                                    <input type="text" class="fleft__form-control" placeholder="Correo Electrónico" />
                                     <button type="submit" class="fleft__btn">Suscríbete</button>
                                 </div>
                             </form>
@@ -884,7 +1010,8 @@
                 <section class="footer__bottom">
                     <div class="footer__copyright">
                         <span class="copyright__text">
-                            &copy; 2025. Todos los derechos reservados a <a class="flinks__title href="#">Víctor Robles</a>
+                            &copy; 2025. Todos los derechos reservados a <a class="flinks__title href=" #">Víctor
+                                Robles</a>
                         </span>
                     </div>
 
@@ -905,4 +1032,5 @@
     </div>
 
 </body>
+
 </html>
